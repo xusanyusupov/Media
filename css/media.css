@@ -1,0 +1,124 @@
+    /* PLANSHETLAR UCHUN 850PX  */
+@media (max-width: 850px) {
+    .navbar__collection{
+        display: none;
+    }
+    .fa-solid.fa-bars{
+        display: block;
+        color: var(--color);
+    }
+    .header__icons a{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        padding: 7px;
+    }   
+    .header__icons a:hover{
+        transition: .5s linear;
+        transform: scale(1.2);
+        border: 1px solid #fff;
+        border-radius: 50%;
+    }
+    .hero__wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        align-self: center;
+        gap: 50px;
+    }
+    .hero__text,
+    .hero__img{
+        width: 100%;
+    }
+    .hero__text{
+        text-align: center;
+    }
+    .hero__text-title{
+        font-size: 44px;
+        font-weight: 700;
+    }
+    .hero__img img {
+        width: 65%;
+        height: 400px;
+        margin: 0 auto;
+        display: block;
+    }
+    .hero__search{
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    /* CATEGORY MEDIA START  */
+    .grid-flex{
+        grid-template-columns: repeat(2, 2fr);
+        justify-content: center;
+    }
+    /* CATEGORY MEDIA END  */
+    /* CARD CSS START  */
+    .card__wrapper{
+        grid-template-columns: repeat(2, 2fr);
+    }
+    /* CARD CSS END  */
+    /* USER COMMENT START MEDIA  */
+    .all_user{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        width: 520px;
+    }
+    .user__wrapper{
+        width: 100%;
+    }
+    .hero__img.sbs{
+        width: 500px;
+        display: block;
+        margin: 0 auto;
+    }
+    /* USER COMMENT START END */
+}
+/* TELEFONLAR UCHUN 450PX  */
+@media (max-width: 450px) {
+    #head{
+        width: 100%;
+    }
+    .hero__wrapper{
+        width: 100%;
+    }
+    .hero__text,
+    .hero__img{
+        width: 100%;
+    }
+    .hero__img img{
+        height: 50%;    
+    }
+    .hero__search{
+        width: 100%;
+    }
+    .hero__search input{
+        width: 100%;
+    }
+    .grid-flex{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card__wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+    .all_user{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .hero__wrapper.bck{
+        padding: 0;
+    }
+    .hero__img.sbs{
+        display: none;
+    }
+   .sub{
+    margin-bottom: 50px;
+   }
+}

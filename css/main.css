@@ -1,0 +1,295 @@
+@font-face {
+    font-family: Poppins-bold;
+    src: url(../fonts/poppins/Poppins-Bold.woff);
+}
+@font-face {
+    font-family: Poppins Regular;
+    src: url(../fonts/poppins/Poppins-Regular.woff);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins Regular';
+}
+/* NONE ELEMENTS START */
+.fa-solid.fa-bars{
+    display: none;
+}
+/* NONE ELEMENTS END */
+/* GLOBAL CSS START  */
+:root{
+    --bck-color: linear-gradient(#383638,#0B0B0B);
+    --color: #fff;
+    --color-header: #8B8E99;
+    --btn-global: #3858D6;
+    --img-bck-color: #f6f6f6;
+}
+.container{
+    max-width: 1132px;
+    padding: 0 16px;
+    width: 100%;
+    margin: 0 auto;
+}
+.btn-global{
+    background: var(--btn-global);
+    border-radius: 10px;
+    padding: 12px 16px;
+    color: var(--color);
+    border: 1px solid var(--btn-global);
+    transition: .5s linear;
+}
+.btn-global:hover{
+    transform: scale(1.2);
+    color: var(--btn-global);
+    background-color: var(--color);
+    /* transform: perspective(100px) rotateX(30deg) rotateY(360deg);  BOSHQA ELEMENTLARGA HAM ISHLATISH KK*/
+}
+.global__text{
+    font-size: 28px;
+    font-weight: 900;
+}
+select,
+option{
+    outline: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+}
+input{
+    outline: none;
+    border: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* GLOBAL CSS END */
+/* HEADER CSS START */
+#head{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 101;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}    
+.navbar__collection{
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+    transition: .5s linear;
+}
+.header-ul{
+    transition: .5s linear;
+    padding: 8px 5px;
+}
+.header-ul:hover{
+    transform: scale(1.2);
+    transform: translateY(-10px);
+}
+.header__link{
+    color: var(--color-header);
+    font-size: 16px;
+    transition: .5s linear;
+}
+.header__select{
+    background-color: var(--bck-color);
+    border: 0;
+    color: var(--color-header);
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s linear;
+    /* selectdagi ▼ belgisini yo'qotish uchun  */
+    /* -webkit-appearance: none;  */
+}
+.header__icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: .5s linear;
+}
+.header__icons a:hover{
+    transition: .5s linear;
+    transform: scale(1.2);
+}
+/* HEADER CSS END */
+/* MAIN CSS START */
+/* HERO CSS START */
+.hero{
+    background: var(--bck-color);
+    padding: 100px 0;
+}
+.hero__wrapper{
+    display: flex;
+    width: 100%;
+    gap: 180px;
+}
+.hero__text,
+.hero__img{
+    width: 50%;
+}
+.hero__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.hero__text-title{
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--color);
+}
+.hero__text-p{
+    font-size: 16px;
+    color: var(--color-header);
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+.hero__search{
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    background-color: var(--color);
+    border-radius: 10px;
+}
+.hero__search input{
+    flex: 1;
+    padding: 0 10px;
+}
+/* HERO CSS END */
+/* CATEGORY BRAND CSS START  */
+.grid-flex{
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid__card{
+    display: flex;
+    gap: 26px;
+    height: 240px;
+    padding: 46px 41px;
+    border-radius: 22px;
+    background-color: var(--img-bck-color);
+    overflow: hidden;
+}
+.grid__card img{
+    animation-name: deg;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease;
+    animation-iteration-count: 3;
+}
+@keyframes deg {
+    0%{
+
+    }
+    100%{
+        transform: perspective(100px) rotateX(0.1deg) rotateY(360deg); 
+    }
+}
+
+.category{
+    margin-top: 73px;
+    margin-bottom: 135px;
+}
+/* CATEGORY BRAND CSS END  */
+/* CARD CSS START  */
+.item__title{
+    display: block;
+    text-align: center;
+    margin-top: 135px;
+    margin-bottom: 65px;
+}
+.card__wrapper{
+    width: 100%;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 440px;
+}
+.card__img{
+    background-color: var(--img-bck-color);
+    border-radius: 5px;
+    padding: 29px 40px;
+}
+.card__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.card__icons{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.btn-global.center{
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 135px;
+    display: block;
+}
+/* CARD CSS END */
+/* USER COMMET START  */
+.all_user{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1100px;
+    grid-gap: 50px;
+    overflow-x: scroll;
+    display: flex;
+    gap: 50px;
+}
+.user__wrapper{
+    flex-shrink: 0;
+    box-sizing: border-box;
+    display: flex;
+    gap: 28px;
+    padding: 30px 34px;
+    background-color: var(--img-bck-color);
+    border-radius: 22px;
+}
+.user__commet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+/* USER COMMET END */
+/* SUBSCRIBE CSS START  */
+.sub{
+    margin-top: 135px;
+    margin-right: auto;
+}
+.hero__wrapper.bck{
+    display: flex;
+    background-color: var(--img-bck-color);
+    padding: 33px 110px;
+    border-radius: 22px;
+}
+.subscribe{
+    display: flex;
+}
+footer{
+    background-color: #0B0B0B;
+}
+footer p{
+    padding: 15px 0;
+    color: #fff;
+    text-align: center  ;
+}
+/* SUBSCRIBE CSS END */

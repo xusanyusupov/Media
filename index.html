@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohid</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- HEDER START -->
+    <header id="head">
+        <div class="container">
+            <nav class="navbar">
+                <div class="header__logo">
+                    <svg width="76" height="27" viewBox="0 0 76 27" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path
+                            d="M38.912 7.88V19H37.088V11.384L33.696 19H32.432L29.024 11.384V19H27.2V7.88H29.168L33.072 16.6L36.96 7.88H38.912ZM45.1334 19.144C44.3014 19.144 43.5494 18.9573 42.8774 18.584C42.2054 18.2 41.6774 17.6667 41.2934 16.984C40.9094 16.2907 40.7174 15.4907 40.7174 14.584C40.7174 13.688 40.9147 12.8933 41.3094 12.2C41.704 11.5067 42.2427 10.9733 42.9254 10.6C43.608 10.2267 44.3707 10.04 45.2134 10.04C46.056 10.04 46.8187 10.2267 47.5014 10.6C48.184 10.9733 48.7227 11.5067 49.1174 12.2C49.512 12.8933 49.7094 13.688 49.7094 14.584C49.7094 15.48 49.5067 16.2747 49.1014 16.968C48.696 17.6613 48.1414 18.2 47.4374 18.584C46.744 18.9573 45.976 19.144 45.1334 19.144ZM45.1334 17.56C45.6027 17.56 46.04 17.448 46.4454 17.224C46.8614 17 47.1974 16.664 47.4534 16.216C47.7094 15.768 47.8374 15.224 47.8374 14.584C47.8374 13.944 47.7147 13.4053 47.4694 12.968C47.224 12.52 46.8987 12.184 46.4934 11.96C46.088 11.736 45.6507 11.624 45.1814 11.624C44.712 11.624 44.2747 11.736 43.8694 11.96C43.4747 12.184 43.16 12.52 42.9254 12.968C42.6907 13.4053 42.5734 13.944 42.5734 14.584C42.5734 15.5333 42.8134 16.2693 43.2934 16.792C43.784 17.304 44.3974 17.56 45.1334 17.56ZM56.0725 10.04C56.7445 10.04 57.3418 10.184 57.8645 10.472C58.3978 10.76 58.8138 11.1867 59.1125 11.752C59.4218 12.3173 59.5765 13 59.5765 13.8V19H57.7685V14.072C57.7685 13.2827 57.5712 12.68 57.1765 12.264C56.7818 11.8373 56.2432 11.624 55.5605 11.624C54.8778 11.624 54.3338 11.8373 53.9285 12.264C53.5338 12.68 53.3365 13.2827 53.3365 14.072V19H51.5125V7.16H53.3365V11.208C53.6458 10.8347 54.0352 10.5467 54.5045 10.344C54.9845 10.1413 55.5072 10.04 56.0725 10.04ZM62.8311 9.016C62.5005 9.016 62.2231 8.904 61.9991 8.68C61.7751 8.456 61.6631 8.17867 61.6631 7.848C61.6631 7.51733 61.7751 7.24 61.9991 7.016C62.2231 6.792 62.5005 6.68 62.8311 6.68C63.1511 6.68 63.4231 6.792 63.6471 7.016C63.8711 7.24 63.9831 7.51733 63.9831 7.848C63.9831 8.17867 63.8711 8.456 63.6471 8.68C63.4231 8.904 63.1511 9.016 62.8311 9.016ZM63.7271 10.184V19H61.9031V10.184H63.7271ZM65.5139 14.552C65.5139 13.6667 65.6952 12.8827 66.0579 12.2C66.4312 11.5173 66.9325 10.9893 67.5619 10.616C68.2019 10.232 68.9112 10.04 69.6899 10.04C70.2659 10.04 70.8312 10.168 71.3859 10.424C71.9512 10.6693 72.3992 11 72.7299 11.416V7.16H74.5699V19H72.7299V17.672C72.4312 18.0987 72.0152 18.4507 71.4819 18.728C70.9592 19.0053 70.3565 19.144 69.6739 19.144C68.9059 19.144 68.2019 18.952 67.5619 18.568C66.9325 18.1733 66.4312 17.6293 66.0579 16.936C65.6952 16.232 65.5139 15.4373 65.5139 14.552ZM72.7299 14.584C72.7299 13.976 72.6019 13.448 72.3459 13C72.1005 12.552 71.7752 12.2107 71.3699 11.976C70.9645 11.7413 70.5272 11.624 70.0579 11.624C69.5885 11.624 69.1512 11.7413 68.7459 11.976C68.3405 12.2 68.0099 12.536 67.7539 12.984C67.5085 13.4213 67.3859 13.944 67.3859 14.552C67.3859 15.16 67.5085 15.6933 67.7539 16.152C68.0099 16.6107 68.3405 16.9627 68.7459 17.208C69.1619 17.4427 69.5992 17.56 70.0579 17.56C70.5272 17.56 70.9645 17.4427 71.3699 17.208C71.7752 16.9733 72.1005 16.632 72.3459 16.184C72.6019 15.7253 72.7299 15.192 72.7299 14.584Z"
+                            fill="white" />
+                        <rect x="-2" width="27" height="27" fill="url(#pattern0_9_34)" />
+                        <defs>
+                            <pattern id="pattern0_9_34" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_9_34" transform="scale(0.0111111)" />
+                            </pattern>
+                            <image id="image0_9_34" width="90" height="90"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAEXElEQVR4nO2dzYtWZRjGf/eMfWIfixaVNTpqi1IXlUZQ0DYixEWLPugP6GuVLRT/gGgRQRC1iRIiMCeXQbswRFrUorSFhvahLQqn8i2ycq4W57w4M77n9I5znvs+Y/cPBl4Ow3Nd5+LhOR/Pee4HkiRJloxFG1iMpC3ANuCO+m8KWA1cC1xf/wYYAL8Bf9S/vwWOAceBz8zsK1/nKwRJGyUdUnd8KmlD9Hn1Ckk3S/q+w5CHnJa0Jvr8eoOkvQVCHvJO9PlBD8ZoSbdSja+rCkn8A6w1s9OF2h+LiUjxmqcpFzJ1208VbH8s+tCjjwJ3FpY5YmabC2u0EtqjJT1E+ZABNkl60EGnkeih43lHrRcctS4ibOiQdBtwgrLj83z+BqbN7JST3gIie/RO/EIGuAJ40VFvASE9WtItwDfANc7SfwIbI3p1VI/ejX/IAFcDLwXo+vdoSXcBXwBXemvXnAPuNrOvPUVde7SkCeAt4kIGuAp4u/bihvfQ8QwQej9bcz/wbLSJzpG0TtKHkuYKvjxaKnOqPK2NzqcTJD0iaTY201ZmJT1cOoeiF0NJjwIzxI7J4/AXsMPMPiolUCxoSdPA58CNpTQ65hequ5GTJRoveTF8jZUTMlReX402sSQkbWkZE89K2iVpWo63WJImas3dkgYt/jZ5eVo2kl5pCfneHvjb2hL2y9H+xkbS4YaT2BXtbYikPQ0eD0V7GxtJPzecxHS0tyGSNjR4/KmEXpG7DknnGX2hXWVm50toLhVJk1QTt4uZM7PJrvVKBa2RYmbhc5Tz8fQZPZXVS+oL5QeSbor20krD2Dey90TS5HMe+7rSyqGjnYGZXdeFVg4d7az+738ZjwzaiQzaiQzaiQzaiQzaiQy6nUFXDWXQ7RSb2uqEy+DJ8KykfV0+gueT4QjypdIKJoN2IoN2IoN2IoN2IoN2IoN2IoN2IoN2IoN2IoN2IoN2IoN2IoN2IoN2IoN2IoN2IoN2olTQc6MO1h9/94IWLyO9L5dSQc82HJ8qpHcprGs4fqaEWKmgjzccf6KQ3qXQ5OWYq4vloOblbwNJW3vgb5uk3xs8rqjlb5tbvpkYqFp6tt5zzJY0qWol1p6WkKWqcEvnlFwLfgDYUar9QsyY2WMlGs5F9xeYBe5ZcYvuzewE8CRViYa+cw54vFTIUPiBpa5/sZ3m270+cAbYbmYfRxtZNpKmJO1X/0r97Jd0e3Q+nSPpueBw5+NZF9W37p2q+hyfEF8p7DDwgJkVedweRRYYdML97Z2ZHaUqMhjFm94hQxaBdSPkfbSZ/UhMr34jqn50Fup2ImyGxcx+AA44Ss5EhQzxU1mvX6ZaFxG+SkrSEaDIq8l5/L+3B6nZ66DxroNGK33o0WuAk+QWTmWpL1DvF5R4Lzrk3qBy2+ydUm6ztxBV83kHOwz5oKT10ec1JHyMXoyqarf3MXor1BtYuBXqr1zYCvU7qs8chluhfunrPEmSpHP+BYgJCK7Bt439AAAAAElFTkSuQmCC" />
+                        </defs>
+                    </svg>
+                </div>
+                <div class="navbar__collection">
+                    <ul>
+                        <li class="header-ul">
+                            <a href="#" class="header__link">
+                                <span>Home <i class="fa-solid fa-house"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__collection ">
+                        <li class="header-ul w">
+                            <select class="header__select">
+                                <option class="header__option" value="">Brands</option>
+                                <option class="header__option" value="">Apple</option>
+                                <option class="header__option" value="">Xiaomi </option>
+                                <option class="header__option" value="">FitBit</option>
+                                <option class="header__option" value="">Samsung</option>
+                                <option class="header__option" value="">Smart-watch</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <ul class="header__collection">
+                        <li class="header-ul">
+                            <a href="#" class="header__link">
+                                <span>Recent Products <i class="fa-brands fa-product-hunt"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__collection">
+                        <li class="header-ul">
+                            <a href="#" class="header__link">
+                                <span>Contact <i class="fa-solid fa-address-book"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__collection">
+                        <li class="header-ul">
+                            <a href="#" class="header__link">
+                                <span>About <i class="fa-solid fa-quote-left"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__icons">
+                    <a href="#">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <a href="#">
+                        <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="20.6202" height="23" fill="url(#pattern0_9_15)" />
+                            <defs>
+                                <pattern id="pattern0_9_15" patternContentUnits="objectBoundingBox" width="1"
+                                    height="1">
+                                    <use xlink:href="#image0_9_15"
+                                        transform="matrix(0.0111111 0 0 0.00996143 0 0.0517358)" />
+                                </pattern>
+                                <image id="image0_9_15" width="90" height="90"
+                                    xlink:href="data:image/png;base64,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" />
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="22" height="23" fill="url(#pattern0_9_18)" />
+                            <defs>
+                                <pattern id="pattern0_9_18" patternContentUnits="objectBoundingBox" width="1"
+                                    height="1">
+                                    <use xlink:href="#image0_9_18"
+                                        transform="matrix(0.0111111 0 0 0.010628 0 0.0217391)" />
+                                </pattern>
+                                <image id="image0_9_18" width="90" height="90"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAEHElEQVR4nO3cz4tVZRzH8c/XmUAlg2hsExY2RRNqoFIEokLoWIiLBLEfVH9Aumujq1wltCzEomXtg35hCw2cqTFpUeHMTTHTaKFBpIWgOL5dPGcgLs0Zz7n3fp8z935fMKuZcz/n+XDumfPjOUcKIYQQQgghhIay3CtQBnhM0g5JmySNSXpE0ori19ckXZLUkjQh6ZiZnc+xnosSMAy8CnxLdZPAK8BQ7nE0GvA8cLZGwe1awHju8TQOsBz4qAsFt/sQWJZ7fI0APAj80IOS55wGVuYeZ1ZFya0eljynNbBlk3YXvdyS250GluYetzt6s09eyNHc43YFjGcoec4LOcbsfsICDEualvS4d3ahJWmtmc16hi7xDCu8pHwlS+kMc493aI6i38yQ2W6fd6DrroN07eKcZ+Y8kDRqZhe8Ar236B3OefMxSa6n6N5Fb3LOK7PZM8y76Ced88qMeYZ5F73KOa/Mw55h3kWvWPhP3NznGeZ91IFn3kLMzG38OY6jB1IU7cS76JvOeWVueIZ5F/2Pc16Za55h3kX/7pxX5pJnmHfR0855ZWY8w7yLnnTOKzPhGeZd9DGlK2e5obQublyLLqZsTXlmzmPSzH7zDMxxHP1+hsx273kH5rhnOCTpjKQnvLML05Ke6vt7hsUA93vn/sd+75KzIs2L83Yk97jdActIs4e8TDGIM5UkCViJz9y7GWAk93izKsr+voclTzGoExzbkXYjR3tQ8hEGdXdRBthG+pp36gzwXO7xNBowBLwMTAC3K5R7GzgJ7AUad0Oj6U9lrVaa6LJZaapC+1NZF5UmLZ5UeirL9bQ6hBBCCCGEEEJYRIBVwJoefv4aoEkT4P0AzwCHgZ+KC0I3gQPdvBgELAEOFp8N8CPwDvB0tzIaCRgFDgHnSq7AnQA2diFrI/BNSc5Z4G3g0W6MLbtiq9oFfAXM3u31TuBLYEuVLbzI2lpk3a1Z4AtgZ5WsxiC9F+kN4JcKg/4/l4GPgdeA9cAIcE/xMwJsAF4HPgGudJg1U3zWcO7+FgQY6cVTv3Y46JzOk248NPNaPfAs6UZov/iOJv3jBJaSjiBu5e2lJ2aBD4DlnfbU0dcDGJX0qaS1na5Iw/0s6cVOXmBY+z8tsFXSKfV/yZK0TtIpYEvdD6i1RZP2Xccl3Vs3eJG6LmnczCo/uVC5aOABpec/BnX2z5+SxszsryoL1dl1HNTgliylsR+oulCdonfVWKbf7Ky6QJ1dx3VJg/6+z3/NrNKbGups0VdqLNNvLlddoE7Rn9dYpt98VnWBOruOh5QO4O+vumyfuCppnZlVety68hZtZn9I2ivnh9Yb4m9Ju6uWLHVwCk6a6fmWpO2SVktq/uXFem5JuiDpa0nvmtnFzOsTQgghhBBCCCGEkN0dCw6ZaydNERoAAAAASUVORK5CYII=" />
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="21" height="23" fill="url(#pattern0_9_17)" />
+                            <defs>
+                                <pattern id="pattern0_9_17" patternContentUnits="objectBoundingBox" width="1"
+                                    height="1">
+                                    <use xlink:href="#image0_9_17"
+                                        transform="matrix(0.0111111 0 0 0.0101449 0 0.0434783)" />
+                                </pattern>
+                                <image id="image0_9_17" width="90" height="90"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAEB0lEQVR4nO2cTYgcRRTH/2/FhIgGkb3I6lUJnrwEPXtRvAbxnEsuiQoK3r15E1QQb4pevEr8zAYETVZUNiCIHzlG/EpWcTdCItmfh+6FQbp6enqqurpr3g8Ghqnqeq//U/26XlV1S47jOI7jOIMD3AG8DvxFmGvAJnAKOJLb50kCvNEicBOXgeO5/Z4UwBrwz4JCA1wHHs3t/9ixgy/AmqQ9SX3Cwc+SjpnZbizHSmPt4IuZ7Ut6u2c7G5LORPFoFQCOAK8Cf/YIIT/l9r8YgNuAp1vEPpbbx6IAvg4I/UJu38bK2vwqjZwN/P5kX0ecBoDjgR79L3B3bv+KgWrM/WtA7Kdy+zdGeoWOeij4YaDYw0dMgBOBHv07VfLjxAA4CtwIiP1Ibv/GRu+eZ2Z/S/oiUOzh438se4n7MG8IgAcDoWMfuC+3f2NiqR5tZj9IutxUJOmJZdouDZtfpR3gFUnPRvBlyuyomvl80cxuNlWIMQz7IEIbU+ceSc9JejlUIUaPPizpqqQ7l22rAK6Z2XpTwdI92sxuSPp02XYKIahnrAzOw0fF56GCWEKflUSktqZM8MqOIrSZ/SJpO0ZbE+eTUEHMyZ9QlrgqXKnzikZc6Hh81FYYU+ivJP0Wsb2p0TryiiZ0vRjQ+q8WzL6k820VYk/Qr2r4+MbMrrZViC30x5Iac/3CCY42Dogq9JzFgJKZmxmnWNtbtfBxXdLWvEou9PKcr+d7WokutJl9r+bFgFLpNKGWalvAKk0yzb0RSumEXpXw0Zp2z5JK6M8krcLu/84JWhKh65vDZoq2R0bnBY+UW7dKDx9z0+5ZUgtd8mLA3LR7lmRCr8BiQKfRxgGpd32WHD4WWpB2ofvRKe2eJbXQpS4GdEq7Z0kqdMGLAQvvYxliZ36J4WOhG6EUYUvYPICjkv6QdCi1rYG4Ymb3L3pQ8h5d4GJAr1A41EM9JYWPXvsMk4cOSQIekNRplmvk3JR0r5ntLHrgID3azH6UdHEIW4l5v4/I0kA9WpKAxySdG8peAm5JetjMvu1z8GAPXprZpqQ3h7KXgJf6ijw4wO3Ae4EnucbMa8BgV38UqB7Yf57qpVdjZwc4GeO8s/1LwLqkk5Iel/SQpHUNGMoC3FKVXF1SNSR9y1/I5TiO4ziOsxDAYeAZYAvYqz9bwBmqx5+LspsFYAO41JIwbAMbpdjNQt2j2k529qSj9bBcdrNBddl25fTU7WYD+HKBE442l53Lbs65jl11f8fHnpndNWW7uSdxurI/dbs5hf4uUd1R2s0p9DsL1H23ALt5oBpmbXe4IW0D0Tbf5LKbFarEoe2kUyYsg9vNCnAIOA1cBHbrz4X6t2Q9Kpddx3Ecx3Ecx3Gc0fEfYNIu96XZHgAAAAAASUVORK5CYII=" />
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- HEDER END -->
+    <!-- MAIN START -->
+    <main>
+        <!-- HERO START -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__text">
+                        <p class="hero__text-title">Discover Most Suitable Watches</p>
+                        <p class="hero__text-p">Find the best, reliable, and cheap smart watches here. We focus on
+                            product quality. Here you can find smart watches of almost all brands. So why you are
+                            waiting? Just order now!</p>
+                        <div class="hero__search">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.625 16.625C13.491 16.625 16.625 13.491 16.625 9.625C16.625 5.75901 13.491 2.625 9.625 2.625C5.75901 2.625 2.625 5.75901 2.625 9.625C2.625 13.491 5.75901 16.625 9.625 16.625Z"
+                                    stroke="#3858D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18.375 18.375L14.5688 14.5688" stroke="#3858D6" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <input type="search" placeholder="Find the best brands">
+                            <button class="btn-global">Search</button>
+                        </div>
+                    </div>
+                    <div class="hero__img">
+                        <img src="./assets/img/hero__main-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- HERO CSS END  -->
+        <!-- CATEGORY START  -->
+        <section class="category">
+            <div class="container">
+                <div class="grid-flex">
+                    <div class="grid__card">
+                        <img src="./assets/img/apple-watch.png" alt="">
+                        <div class="">
+                            <p class="global__text">Apple</p>
+                            <p>Apple is one of the most famous smart watches providing company.</p>
+                        </div>
+                    </div>
+                    <div class="grid__card">
+                        <img src="./assets/img/samsung-watch-card-1.png" alt="">
+                        <div class="">
+                            <p class="global__text">Xiaomi</p>
+                            <p>Xiaomi smart watches are produced by MI company.</p>
+                        </div>
+                    </div>
+                    <div class="grid__card">
+                        <img src="./assets/img/FitBit watch.png" alt="">
+                        <div class="">
+                            <p class="global__text">FitBit</p>
+                            <p>FitBit smart watches are best for there health and fitness features.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CATEGORY END -->
+        <!-- CARD START  -->
+        <section class="all__card">
+            <div class="container">
+                <div class="item__title">
+                    <a href="#" class="item__title-p">Find your favourite smart watch.</a href="#">
+                    <p class="global__text">Our Latest Products </p>
+                </div>
+                <div class="card__wrapper">
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./assets/img/apple-smatr-card.png" alt="">
+                        </div>
+                        <div class="card__text">
+                            <p class="global__text">Apple Smart I</p>
+                            <div class="card__icons">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span><del>$300.00</del>$255.00</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./assets/img/apple-smatr-card-1.png" alt="">
+                        </div>
+                        <div class="card__text">
+                            <p class="global__text">Apple Smart II</p>
+                            <div class="card__icons">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span><del>$300.00</del>$255.00</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./assets/img/apple-smatr-card-2.png" alt="">
+                        </div>
+                        <div class="card__text">
+                            <p class="global__text">Apple Smart III</p>
+                            <div class="card__icons">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span><del>$300.00</del>$255.00</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./assets/img/apple-smatr-card-3.png" alt="">
+                        </div>
+                        <div class="card__text">
+                            <p class="global__text">Apple Smart IV</p>
+                            <div class="card__icons">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span><del>$300.00</del>$255.00</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./assets/img/apple-smatr-card.png" alt="">
+                        </div>
+                        <div class="card__text">
+                            <p class="global__text">Apple Smart V</p>
+                            <div class="card__icons">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span><del>$300.00</del>$255.00</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./assets/img/apple-smatr-card-2.png" alt="">
+                        </div>
+                        <div class="card__text">
+                            <p class="global__text">Apple Smart III</p>
+                            <div class="card__icons">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span><del>$300.00</del>$255.00</span>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="btn-global center">View more</button>
+            </div>
+        </section>
+        <!-- CARD END  -->
+        <!-- USER COMMENT START  -->
+        <section class="comments">
+            <div class="container">
+                <div class="item__title">
+                    <a href="#">Here are our some of the best clients.</a>
+                    <p class="global__text">What People Say About Us</p>
+                </div>
+                <div class="all_user">
+                    <div class="user__wrapper">
+                        <div class="user__img">
+                            <img src="./assets/img/about users.jpg" alt="">
+                        </div>
+                        <div class="user__commet">
+                            <strong>Hafiz Huzaifa</strong>
+                            <p>Don’t waste time, just order! This is the best website to puschase smart watches.</p>
+                            <div class="card__icons">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user__wrapper">
+                        <div class="user__img">
+                            <img src="./assets/img/about users-2.jpg" alt="">
+                        </div>
+                        <div class="user__commet">
+                            <strong>Hamza Faizi</strong>
+                            <p>Don’t waste time, just order! This is the best website to puschase smart watches.</p>
+                            <div class="card__icons">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user__wrapper">
+                        <div class="user__img">
+                            <img src="./assets/img/about users.jpg" alt="">
+                        </div>
+                        <div class="user__commet">
+                            <strong>Hamza Faizi</strong>
+                            <p>Don’t waste time, just order! This is the best website to puschase smart watches.</p>
+                            <div class="card__icons">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user__wrapper">
+                        <div class="user__img">
+                            <img src="./assets/img/about users-2.jpg" alt="">
+                        </div>
+                        <div class="user__commet">
+                            <strong>Hamza Faizi</strong>
+                            <p>Don’t waste time, just order! This is the best website to puschase smart watches.</p>
+                            <div class="card__icons">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- USER COMMENT END  -->
+        <!-- SUBSCRIBE START  -->
+        <section class="sub"> 
+           <div class="container">
+            <div class="hero__wrapper bck">
+                <div class="hero__text">
+                    <p class="global__text">Subscribe To Newsletter</p>
+                    <p class="get">Get free guide about smart watches daily. </p>
+                    <div class="hero__search">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.625 16.625C13.491 16.625 16.625 13.491 16.625 9.625C16.625 5.75901 13.491 2.625 9.625 2.625C5.75901 2.625 2.625 5.75901 2.625 9.625C2.625 13.491 5.75901 16.625 9.625 16.625Z"
+                                stroke="#3858D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M18.375 18.375L14.5688 14.5688" stroke="#3858D6" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <input type="search" placeholder="Find the best brands">
+                        <button class="btn-global">Search</button>
+                    </div>
+                </div>
+                <div class="hero__img sbs">
+                    <img src="./assets/img/apple-smatr-card.png" alt="">
+                </div>
+            </div>
+           </div>
+        </section>
+        <!-- SUBSCRIBE END  -->
+    </main>
+    <!-- MAIN END -->
+
+    <footer>
+        <p>Copyright @ 2022 | Mohid</p>
+    </footer>
+    <link rel="stylesheet" href="./css/media.css">
+</body>
+
+</html>
